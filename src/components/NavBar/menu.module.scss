@@ -20,6 +20,9 @@
         @media screen and (min-width: $desktop_xsm) {
             font-size: 22px;
         }
+        @media screen and (min-width: $desktop) {
+            font-size: 26px;
+        }
     }
 
     .navbar {
@@ -143,6 +146,9 @@
                     font-size: 18px;
                     font-weight: $medium;
                     text-decoration: none;
+                    @media screen and (min-width: $desktop) {
+                        font-size: 22px;
+                    }
                 }
             }
         }
@@ -160,6 +166,9 @@
                 border-radius: 40px;
                 border: none;
                 cursor: pointer;
+                @media screen and (min-width: $desktop) {
+                    font-size: 18px;
+                }
             }
 
             .btnLang {
@@ -171,6 +180,9 @@
                 border-radius: 40px;
                 border: none;
                 cursor: pointer;
+                @media screen and (min-width: $desktop) {
+                    font-size: 18px;
+                }
             }
         }
     }

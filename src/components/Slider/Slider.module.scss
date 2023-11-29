@@ -1,0 +1,38 @@
+@import '/src/styles/variables';
+@import '/src/styles/breakpoints';
+
+.container {
+    text-align: center;
+
+
+    .banner {
+        width: 320px;
+        height: 110px;
+        margin-top: 20px;
+        object-fit: cover;
+        border-radius: 30px;
+
+        @media screen and (min-width: $smartphone) {
+            width: 420px;
+            height: 140px;
+        }
+
+        @media screen and (min-width: $tablet) {
+            width: 620px;
+            height: 210px;
+        }
+
+        @media screen and (min-width: $desktop_xsm) {
+            width: 820px;
+            height: 270px;
+        }
+
+        @media screen and (min-width: $desktop_sm) {
+            width: 1000px;
+            height: 328px;
+        }
+
+    }
+
+
+}

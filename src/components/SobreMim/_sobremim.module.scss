@@ -1,0 +1,35 @@
+@import '/src/styles/variables';
+@import '/src/styles/breakpoints';
+
+.secao {
+    .organizacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .imagem {
+            width: 150px;
+            height: 201px;
+            margin: 100px auto 50px;
+        }
+
+        .textos {
+            .h2 {
+                color: $black;
+                font-size: 20px;
+                font-weight: $bold;
+                text-align: left;
+                margin-bottom: 10px;
+            }
+
+            .p {
+                color: $black;
+                font-size: 20px;
+                font-weight: $medium;
+                text-align: left;
+            }
+        }
+    }
+
+}
