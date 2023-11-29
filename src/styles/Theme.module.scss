@@ -1,0 +1,27 @@
+@import './breakpoints';
+
+.container {
+    max-width: 360px;
+    margin: auto auto;
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        max-width: 480px;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: 991px) {
+        max-width: $tablet;
+    }
+
+    @media screen and (min-width: $desktop_xsm) and (max-width: 1279px) {
+        max-width: $desktop_xsm;
+    }
+
+    @media screen and (min-width: $desktop_sm) and (max-width: 1439px) {
+        max-width: $desktop_sm;
+        margin: 40px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: $desktop;
+    }
+}

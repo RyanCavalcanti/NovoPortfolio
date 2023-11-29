@@ -1,0 +1,177 @@
+@import '/src/styles/variables';
+@import '/src/styles/breakpoints';
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 10px 0 10px;
+
+    .name {
+        color: $black;
+        font-size: 14px;
+        font-weight: $bold;
+        cursor: pointer;
+
+        @media screen and (min-width: $smartphone) {
+            font-size: 18px;
+        }
+
+        @media screen and (min-width: $desktop_xsm) {
+            font-size: 22px;
+        }
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        margin-right: 25px;
+
+        .menuFaketrigger {
+            position: absolute;
+            z-index: 1000;
+            width: 25px;
+            height: 19px;
+            opacity: 0;
+            cursor: pointer;
+            margin: 0;
+        }
+
+        .menuFaketrigger:checked~.menu {
+            span {
+                background-color: $white;
+            }
+
+            span:nth-child(1) {
+                transform-origin: 0% 0%;
+                transform: rotate(45deg) scaleX(0.90);
+            }
+
+            span:nth-child(2) {
+                opacity: 0;
+            }
+
+            span:nth-child(3) {
+                transform-origin: 0% 100%;
+                transform: rotate(-45deg) scaleX(0.90);
+            }
+        }
+
+        .menu {
+            position: absolute;
+            z-index: 999;
+            width: 25px;
+            height: 19px;
+
+            span {
+                display: block;
+                width: 25px;
+                height: 5px;
+                margin-bottom: 2px;
+                background-color: $black;
+                border-radius: 8px;
+                transition: all ease .4s;
+            }
+        }
+
+        ul {
+            position: absolute;
+            z-index: 998;
+            right: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: $grey;
+            margin-right: 100%;
+            transition: all ease .4s;
+        }
+
+        .menuFaketrigger:checked~ul {
+            margin-right: 0%;
+        }
+
+        .list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            .item {
+                color: $white;
+                font-size: 16px;
+                font-weight: $medium;
+                text-decoration: none;
+
+                @media screen and (min-width: $smartphone) {
+                    font-size: 20px;
+
+                }
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+
+    .list__ul {
+        display: none;
+    }
+
+    .btns {
+        display: none;
+    }
+
+    @media screen and (min-width: $tablet) {
+        .navbar {
+            display: none;
+        }
+
+        .itens {
+            display: flex;
+            gap: 1rem;
+
+            .list__ul {
+                display: flex;
+                gap: 1rem;
+
+                .item {
+                    color: $black;
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: $medium;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .btns {
+            display: flex;
+            gap: 20px;
+
+            .btnCtt {
+                background-color: $black;
+                color: $white;
+                font-size: 14px;
+                font-weight: $medium;
+                padding: 10px 16px;
+                border-radius: 40px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .btnLang {
+                background-color: $light-grey;
+                color: $black;
+                font-size: 14px;
+                font-weight: $medium;
+                padding: 10px 16px;
+                border-radius: 40px;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
