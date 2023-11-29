@@ -1,0 +1,35 @@
+@import '/src/styles/variables';
+@import '/src/styles/breakpoints';
+
+.section__one {
+    margin-top: 50px;
+
+    .title {
+        color: $black;
+        text-align: center;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: $bold;
+        line-height: normal;
+    }
+
+    .subtitle {
+        color: $black;
+        text-align: center;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: $medium;
+        line-height: normal;
+    }
+
+
+    .text {
+        margin: 10px 55px 0;
+        color: $black;
+        text-align: center;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: $medium;
+        line-height: normal;
+    }
+}
