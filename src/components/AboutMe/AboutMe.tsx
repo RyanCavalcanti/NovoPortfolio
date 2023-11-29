@@ -1,14 +1,14 @@
 import foto from '../../assets/fotografia.webp';
-import styles from './_sobremim.module.scss';
+import styles from './_aboutme.module.scss';
 
-const SobreMim = () => {
+const AboutMe = () => {
   return (
     <section className={styles.secao}>
       <div className={styles.organizacao}>
         <img src={foto} className={styles.imagem} alt="Ryan Cavalcanti" />
         <div className={styles.textos}>
-          <h1 className={styles.h2}>Olá! Eu sou Ryan Cavalcanti!</h1>
-          <p className={styles.p}>
+          <h1 className={styles.titulo}>Olá! Eu sou Ryan Cavalcanti!</h1>
+          <p className={styles.texto}>
             Minha principal missão é projetar interfaces web intuitivas e
             cativantes que elevem a experiência do usuário a um novo patamar.
             Busco constantemente inovações e tendências para garantir que meus
@@ -26,4 +26,4 @@ const SobreMim = () => {
   );
 };
 
-export default SobreMim;
+export default AboutMe;

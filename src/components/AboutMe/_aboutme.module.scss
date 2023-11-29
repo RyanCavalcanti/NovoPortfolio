@@ -1,0 +1,88 @@
+@import '/src/styles/variables';
+@import '/src/styles/breakpoints';
+
+.secao {
+    .organizacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+
+        .imagem {
+            width: 150px;
+            height: 201px;
+            margin: 20px;
+
+            @media screen and (min-width: $tablet) {
+                width: 200px;
+                height: 251px;
+            }
+
+            @media screen and (min-width: $desktop_xsm) {
+                width: 250px;
+                height: 311px;
+            }
+
+            @media screen and (min-width: $desktop_sm) {
+                width: 280px;
+                height: 361px;
+            }
+        }
+
+        .textos {
+            text-align: center;
+
+            .titulo {
+                color: $black;
+                font-size: 14px;
+                font-weight: $bold;
+
+                @media screen and (min-width: $smartphone) {
+                    font-size: 20px;
+                }
+
+                @media screen and (min-width: $tablet) {
+                    font-size: 26px;
+                }
+
+                @media screen and (min-width: $desktop_xsm) {
+                    font-size: 28px;
+                }
+
+                @media screen and (min-width: $desktop_sm) {
+                    font-size: 32px;
+                }
+            }
+
+            .texto {
+                color: $black;
+                font-size: 10px;
+                font-weight: $medium;
+                text-align: left;
+                margin: 10px;
+
+                @media screen and (min-width: $smartphone) {
+                    font-size: 10px;
+                    width: 380px;
+                }
+
+                @media screen and (min-width: $tablet) {
+                    font-size: 14px;
+                    width: 520px;
+                }
+
+                @media screen and (min-width: $desktop_xsm) {
+                    font-size: 18px;
+                    width: 720px;
+                }
+
+                @media screen and (min-width: $desktop_sm) {
+                    font-size: 20px;
+                    width: 820px;
+                }
+            }
+        }
+    }
+
+}
