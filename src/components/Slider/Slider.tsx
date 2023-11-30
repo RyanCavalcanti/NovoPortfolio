@@ -13,8 +13,8 @@ import 'swiper/css/autoplay';
 const Slider = () => {
 
     const imagens = [
-        { id: '1',  image: '/src/assets/BannerResults.png', alt: 'Results Comunicação', },
-        { id: '2',  image: '/src/assets/BannerCeB.jpg', alt: 'CeB Consultoria', },
+        { id: '1',  image: 'assets/BannerResults.png', alt: 'Results Comunicação', },
+        { id: '2',  image: 'assets/BannerCeB.jpg', alt: 'CeB Consultoria', },
     ]
 
     const [indiceAtual, setIndiceAtual] = useState(0);

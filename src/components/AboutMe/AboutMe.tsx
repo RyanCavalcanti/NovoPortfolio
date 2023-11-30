@@ -1,4 +1,4 @@
-import foto from '../../assets/fotografia.webp';
+import foto from '../../../public/assets/Ryan foto.png';
 import styles from './_aboutme.module.scss';
 
 const AboutMe = () => {

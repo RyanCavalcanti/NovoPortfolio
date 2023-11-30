@@ -5,6 +5,7 @@ import Slider from './components/Slider/Slider';
 import AboutMe from './components/AboutMe/AboutMe';
 import Title from './components/Title/Title';
 import ServicesProvided from './components/ServicesProvided/ServicesProvided';
+import ProjectsClient from './components/ProjetcsClient/ProjetcsClient';
 
 function App() {
 
@@ -16,6 +17,8 @@ function App() {
     <AboutMe/> 
     <Title Titulo='Serviços' />
     <ServicesProvided />
+    <Title Titulo='Projetos Clientes' />
+    <ProjectsClient />
     </body>
   )
 }
