@@ -2,12 +2,24 @@
 @import '/src/styles/breakpoints';
 
 .secao {
+
     .organizacao {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 30px;
+        text-align: center;
+        margin: 30px auto 0;
+
+        @media screen and (min-width: $desktop_xsm) {
+            flex-direction: row;
+            width: 942px;
+        }
+
+        @media screen and (min-width: $desktop_sm) {
+            flex-direction: row;
+            width: 942px;
+        }
 
         .imagem {
             width: 150px;
@@ -22,11 +34,13 @@
             @media screen and (min-width: $desktop_xsm) {
                 width: 250px;
                 height: 311px;
+                margin-right: 50px;
             }
 
             @media screen and (min-width: $desktop_sm) {
                 width: 280px;
                 height: 361px;
+                margin-right: 150px;
             }
         }
 
@@ -46,10 +60,6 @@
                     font-size: 26px;
                 }
 
-                @media screen and (min-width: $desktop_xsm) {
-                    font-size: 28px;
-                }
-
                 @media screen and (min-width: $desktop_sm) {
                     font-size: 32px;
                 }
@@ -57,29 +67,33 @@
 
             .texto {
                 color: $black;
-                font-size: 10px;
+                font-size: 12px;
                 font-weight: $medium;
                 text-align: left;
                 margin: 10px;
 
                 @media screen and (min-width: $smartphone) {
-                    font-size: 10px;
+                    font-size: 15px;
                     width: 380px;
                 }
 
                 @media screen and (min-width: $tablet) {
-                    font-size: 14px;
+                    font-size: 17px;
                     width: 520px;
                 }
 
                 @media screen and (min-width: $desktop_xsm) {
-                    font-size: 18px;
-                    width: 720px;
+                    width: 520px;
                 }
 
                 @media screen and (min-width: $desktop_sm) {
-                    font-size: 20px;
-                    width: 820px;
+                    width: 620px;
+                    font-size: 21px;
+                }
+
+                @media screen and (min-width: $desktop) {
+                    width: 720px;
+                    font-size: 21px;
                 }
             }
         }

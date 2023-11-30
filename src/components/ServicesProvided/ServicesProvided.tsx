@@ -18,13 +18,14 @@ const ServicesProvided = () => {
       };
 
       interface PhotoProps {
-        imageUrl: string;
+        imageUrl: string,
+        imageAlt: string,
       }
       
-      const PhotoComponent: React.FC<PhotoProps> = ({ imageUrl }) => {
+      const PhotoComponent: React.FC<PhotoProps> = ({ imageUrl, imageAlt }) => {
         return (
           <div>
-            <img className={styles.img} src={imageUrl} alt="Imagem" />
+            <img className={styles.img} src={imageUrl} alt={imageAlt} />
           </div>
         );
       };
@@ -38,11 +39,11 @@ const ServicesProvided = () => {
   const renderPhoto = () => {
     switch (selectedButton) {
       case 1:
-        return <PhotoComponent imageUrl="/src/assets/BannerCeB.jpg" />;
+        return <PhotoComponent imageUrl="/src/assets/BannerCeB.jpg" imageAlt='C&B Consultoria' />;
       case 2:
-        return <PhotoComponent imageUrl="/src/assets/BannerResults.png" />;
+        return <PhotoComponent imageUrl="/src/assets/BannerResults.png" imageAlt='Results Comunicação' />;
       case 3:
-        return <PhotoComponent imageUrl="/src/assets/BannerAurora.jpg" />;
+        return <PhotoComponent imageUrl="/src/assets/BannerAurora.jpg" imageAlt='Traje Aurora' />;
       default:
         return null;
     }
