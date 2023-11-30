@@ -3,21 +3,21 @@
 
 .titulo {
     color: $black;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: $bold;
     text-align: center;
-    margin: 30px 0 10px;
+    margin: 30px 50px 10px;
 
     @media screen and (min-width: $smartphone) {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     @media screen and (min-width: $tablet) {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     @media screen and (min-width: $desktop_xsm) {
-        font-size: 32px;
+        font-size: 34px;
     }
 
     @media screen and (min-width: $desktop_sm) {

@@ -1,0 +1,102 @@
+@import '/src/styles/variables';
+@import '/src/styles/breakpoints';
+
+.box {
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 30px 0;
+    width: 320px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.20);
+    box-shadow: 0px 0px 10px 0px #272727;
+    backdrop-filter: blur(20px);
+
+    @media screen and (min-width: $smartphone) {
+        width: 380px;
+        height: 540px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: 450px;
+        height: 600px;
+    }
+
+    @media screen and (min-width: $desktop_xsm) {
+        height: 640px;
+    }
+
+    .title {
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: $bold;
+        line-height: normal;
+        margin: 0 auto 10px;
+
+        background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @media screen and (min-width: $smartphone) {
+            font-size: 34px;
+        }
+
+        @media screen and (min-width: $tablet) {
+            font-size: 40px;
+        }
+
+        @media screen and (min-width: $desktop_xsm) {
+            font-size: 50px;
+        }
+    }
+
+    .texts {
+        .subtitle {
+            text-align: initial;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: $bold;
+            line-height: normal;
+            margin: 10px 10px;
+
+            background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            @media screen and (min-width: $smartphone) {
+                font-size: 20px;
+            }
+
+            @media screen and (min-width: $tablet) {
+                font-size: 22px;
+                margin: 10px 30px;
+            }
+
+            @media screen and (min-width: $desktop_xsm) {
+                font-size: 24px;
+            }
+        }
+
+        .text {
+            color: $black;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: $medium;
+            line-height: normal;
+            margin: 0 10px;
+
+            @media screen and (min-width: $smartphone) {
+                font-size: 16px;
+            }
+
+            @media screen and (min-width: $tablet) {
+                font-size: 18px;
+                margin: 10px 30px;
+            }
+        }
+    }
+}
