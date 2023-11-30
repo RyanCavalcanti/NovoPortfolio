@@ -1,0 +1,34 @@
+@import '/src/styles/variables';
+@import '/src/styles/breakpoints';
+
+.btn {
+    color: $black;
+    background-color: transparent;
+    border: 1px solid $black;
+    border-radius: 100px;
+    padding: 8px 16px;
+    margin: 20px 10px;
+    font-size: 10px;
+    font-weight: $regular;
+}
+
+.btnselected {
+    color: $white;
+    background-color: $black;
+    border: 1px solid $black;
+    border-radius: 100px;
+    padding: 8px 16px;
+    margin: 20px 10px;
+    font-size: 10px;
+    font-weight: $regular;
+}
+
+.img {
+    width: 320px;
+    height: 105px;
+    border-radius: 30px;
+}
+
+.box {
+    text-align: center;
+}

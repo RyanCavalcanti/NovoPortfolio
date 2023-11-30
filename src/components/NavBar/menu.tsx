@@ -15,16 +15,16 @@ const NavBar = () => {
         </div>
 
         <ul className={styles.list}>
-            <li ><a className={styles.item} href="">Sobre Mim</a></li>
-            <li ><a className={styles.item} href="">Serviços</a></li>
-            <li ><a className={styles.item} href="">Projetos</a></li>
+            <li ><a className={styles.item} href="#sobremim">Sobre Mim</a></li>
+            <li ><a className={styles.item} href="#servicos">Serviços</a></li>
+            <li ><a className={styles.item} href="#projetos">Projetos</a></li>
         </ul> 
         </div>
         <div className={styles.itens}>
             <ul className={styles.list__ul}>
-                <li ><a className={styles.item} href="">Sobre Mim</a></li>
-                <li ><a className={styles.item} href="">Serviços</a></li>
-                <li ><a className={styles.item} href="">Projetos</a></li>
+                <li ><a className={styles.item} href="#sobremim">Sobre Mim</a></li>
+                <li ><a className={styles.item} href="#servicos">Serviços</a></li>
+                <li ><a className={styles.item} href="#projetos">Projetos</a></li>
             </ul> 
         </div>
         </nav>

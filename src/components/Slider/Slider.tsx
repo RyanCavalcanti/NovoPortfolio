@@ -13,8 +13,8 @@ import 'swiper/css/autoplay';
 const Slider = () => {
 
     const imagens = [
-        { id: '1',  image: '/src/assets/BannerResults.png', alt: 'Results Comunicação', href: 'https://www.resultscomunicacao.com/' },
-        { id: '2',  image: '/src/assets/BannerCeB.jpg', alt: 'CeB Consultoria', href: 'https://cebconsultoriadesegurancaocupacional.com/' },
+        { id: '1',  image: '/src/assets/BannerResults.png', alt: 'Results Comunicação', },
+        { id: '2',  image: '/src/assets/BannerCeB.jpg', alt: 'CeB Consultoria', },
     ]
 
     const [indiceAtual, setIndiceAtual] = useState(0);
@@ -33,7 +33,7 @@ const Slider = () => {
     >
         {imagens.map( (item) => (
             <SwiperSlide key={item.id} >
-                <a href={item.href} target='_blank'><img src={item.image} alt={item.alt}  className={styles.banner} /></a>
+                <img src={item.image} alt={item.alt}  className={styles.banner} />
             </SwiperSlide>
         ))}
     </Swiper>

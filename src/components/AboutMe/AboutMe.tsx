@@ -3,7 +3,7 @@ import styles from './_aboutme.module.scss';
 
 const AboutMe = () => {
   return (
-    <section className={styles.secao}>
+    <section className={styles.secao} id='sobremim'>
       <div className={styles.organizacao}>
         <img src={foto} className={styles.imagem} alt="Ryan Cavalcanti" />
         <div className={styles.textos}>

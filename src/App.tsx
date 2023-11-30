@@ -4,6 +4,7 @@ import TextInfo from './components/TextInfo/TextInfo';
 import Slider from './components/Slider/Slider';
 import AboutMe from './components/AboutMe/AboutMe';
 import Title from './components/Title/Title';
+import ServicesProvided from './components/ServicesProvided/ServicesProvided';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     <Slider />
     <AboutMe/> 
     <Title Titulo='Serviços' />
+    <ServicesProvided />
     </body>
   )
 }
