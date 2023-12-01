@@ -51,7 +51,7 @@ const ServicesProvided = () => {
 
     return(
 
-        <div className={styles.box}>
+        <div className={styles.box} id="servicos">
       <ButtonComponent onClick={() => handleButtonClick(1)} label="Sites" isSelected={selectedButton === 1}/>
       <ButtonComponent onClick={() => handleButtonClick(2)} label="Landing Page" isSelected={selectedButton === 2}/>
       <ButtonComponent onClick={() => handleButtonClick(3)} label="E-commerces" isSelected={selectedButton === 3}/>

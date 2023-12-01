@@ -8,7 +8,7 @@ const ProjectsClient = () => {
     ]
 
     return(
-        <section className={styles.box}>
+        <section className={styles.box} id='projetos'>
             {projects.map( (item) => (
             <div className={styles.div} key={item.id} >
                 <img className={styles.img} src={item.src} alt={item.alt} />

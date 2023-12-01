@@ -40,7 +40,7 @@
     .form {
         text-align: center;
         width: 340px;
-        height: 212px;
+        height: 290px;
         flex-shrink: 0;
         border-radius: 20px;
         background: rgba(255, 255, 255, 0.20);
@@ -49,18 +49,18 @@
 
         @media screen and (min-width: $smartphone) {
             width: 400px;
-            height: 220px;
+            height: 300px;
         }
 
         @media screen and (min-width: $tablet) {
             width: 600px;
-            height: 360px;
+            height: 400px;
             padding: 50px;
         }
 
         @media screen and (min-width: $desktop) {
             width: 644px;
-            height: 400px;
+            height: 480px;
         }
 
         .inputName {
@@ -70,7 +70,7 @@
             border-radius: 40px;
             background: $light-grey;
             border: 1px solid $black;
-            margin: 30px 0;
+            margin-top: 30px;
             color: $black-text;
             font-size: 12px;
             font-style: normal;
@@ -97,17 +97,20 @@
         }
 
         .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
 
-
             .inputEmail {
-                width: 137px;
+                width: 300px;
                 height: 27px;
                 flex-shrink: 0;
                 border-radius: 40px;
                 background: $light-grey;
                 border: 1px solid $black;
-                margin-right: 30px;
+                margin-top: 30px;
                 color: $black-text;
                 font-size: 12px;
                 font-style: normal;
@@ -116,30 +119,31 @@
                 padding-left: 10px;
 
                 @media screen and (min-width: $smartphone) {
-                    width: 160px;
+                    width: 350px;
                     height: 30px;
                     font-size: 16px;
                 }
 
                 @media screen and (min-width: $tablet) {
-                    width: 220px;
+                    width: 470px;
                     height: 35px;
                 }
 
                 @media screen and (min-width: $desktop) {
-                    width: 250px;
+                    width: 540px;
                     height: 52px;
                     font-size: 18px;
                 }
             }
 
             .inputNumber {
-                width: 137px;
+                width: 300px;
                 height: 27px;
                 flex-shrink: 0;
                 border-radius: 40px;
                 background: $light-grey;
                 border: 1px solid $black;
+                margin-top: 30px;
                 color: $black-text;
                 font-size: 12px;
                 font-style: normal;
@@ -148,18 +152,18 @@
                 padding-left: 10px;
 
                 @media screen and (min-width: $smartphone) {
-                    width: 160px;
+                    width: 350px;
                     height: 30px;
                     font-size: 16px;
                 }
 
                 @media screen and (min-width: $tablet) {
-                    width: 220px;
+                    width: 470px;
                     height: 35px;
                 }
 
                 @media screen and (min-width: $desktop) {
-                    width: 250px;
+                    width: 540px;
                     height: 52px;
                     font-size: 18px;
                 }
@@ -212,6 +216,7 @@
             margin: 6px 20px;
 
             @media screen and (min-width: $tablet) {
+                margin: 16px 20px;
                 font-size: 14px;
             }
         }

@@ -2,33 +2,38 @@
 @import '/src/styles/breakpoints';
 
 .section__one {
-    margin-top: 50px;
+    margin-top: 25px;
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 50px;
+    }
 
     .title {
         color: $black;
         text-align: center;
-        font-size: 12px;
+        font-size: 16px;
         font-style: normal;
         font-weight: $bold;
         line-height: normal;
+        margin: 0 10px;
 
         @media screen and (min-width: $smartphone) {
-            font-size: 14px;
+            font-size: 18px;
             margin: 0 50px;
         }
 
         @media screen and (min-width: $tablet) {
-            font-size: 20px;
+            font-size: 24px;
             margin: 0 100px;
         }
 
         @media screen and (min-width: $desktop_xsm) {
-            font-size: 28px;
-            margin: 0 200px;
+            font-size: 30px;
+            margin: 0 180px;
         }
 
         @media screen and (min-width: $desktop_sm) {
-            font-size: 28px;
+            font-size: 32px;
             margin: 0 250px;
         }
 
@@ -41,50 +46,58 @@
     .subtitle {
         color: $black;
         text-align: center;
-        font-size: 12px;
+        font-size: 16px;
         font-style: normal;
         font-weight: $medium;
         line-height: normal;
 
         @media screen and (min-width: $smartphone) {
-            font-size: 14px;
+            font-size: 18px;
         }
+
         @media screen and (min-width: $tablet) {
-            font-size: 20px;
+            font-size: 22px;
         }
+
         @media screen and (min-width: $desktop_xsm) {
             font-size: 28px;
         }
+
         @media screen and (min-width: $desktop) {
-            font-size: 34px;
+            font-size: 30px;
             margin: 0 300px;
         }
     }
 
     .text {
-        margin: 30px 55px 0;
+        margin: 30px 5px 0;
         color: $black;
         text-align: center;
-        font-size: 10px;
+        font-size: 14px;
         font-style: normal;
         font-weight: $medium;
         line-height: normal;
 
         @media screen and (min-width: $smartphone) {
-            font-size: 12px;
-        }
-        @media screen and (min-width: $tablet) {
+            margin: 30px 40px 0;
             font-size: 16px;
+        }
+
+        @media screen and (min-width: $tablet) {
+            font-size: 18px;
             margin: 30px 100px 0;
         }
+
         @media screen and (min-width: $desktop_xsm) {
-            font-size: 18px;
+            font-size: 20px;
             margin: 30px 150px;
         }
+
         @media screen and (min-width: $desktop_sm) {
-            font-size: 22px;
+            font-size: 24px;
             margin: 30px 200px;
         }
+
         @media screen and (min-width: $desktop) {
             margin: 30px 300px;
         }
