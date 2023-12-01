@@ -8,6 +8,9 @@ import ServicesProvided from './components/ServicesProvided/ServicesProvided';
 import ProjectsClient from './components/ProjetcsClient/ProjetcsClient';
 import Cards from './components/Cards/Cards';
 import ContainerCard from './components/ContainerCard/ContainerCard';
+import Form from './components/Form/Form';
+import Footer from './components/Footer/Footer';
+import SocialMedia from './components/SocialMedia/SocialMedia';
 
 function App() {
 
@@ -31,8 +34,11 @@ function App() {
       <Cards title='Back-end' subtitle='Back-end' text='O Back-end é a espinha dorsal de muitos sites dinâmicos, lidando com o processamento e armazenamento de dados. Desenvolvendo servidores robustos possibilita-se interações dinâmicas, manipulação de bancos de dados e a entrega de conteúdo personalizado aos usuários.' twoSubtitle='API e Insfraestrutura' twoText='As APIs desempenham um papel crucial na comunicação entre diferentes sistemas, permitindo a troca eficiente de dados. A infraestrutura fornece o suporte técnico necessário para garantir a estabilidade, escalabilidade e segurança dessas interações, formando a base essencial para o funcionamento harmonioso de serviços digitais.'/>
     </ContainerCard>
 
+    <Form/>
+    <SocialMedia/>
+    <Footer />
 
-
+    <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 
     </main>
   )
