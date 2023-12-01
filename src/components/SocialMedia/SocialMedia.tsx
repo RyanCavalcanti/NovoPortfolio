@@ -16,7 +16,7 @@ const SocialMedia = () => {
             <div key={item.id}>
             <a href={item.href} target='_blank'><img className={styles.icon} src={item.src} alt={item.alt} /></a>
         </div>
-        ))};
+        ))}
         </ContainerMidia>
     )
     

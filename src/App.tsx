@@ -15,6 +15,7 @@ import SocialMedia from './components/SocialMedia/SocialMedia';
 function App() {
 
   return (
+    <>
     <main className={styleContainer.container}>
     <NavBar />
     <TextInfo />
@@ -36,11 +37,9 @@ function App() {
 
     <Form/>
     <SocialMedia/>
-    <Footer />
-
-    <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-
     </main>
+    <Footer />
+    </>
   )
 }
 
