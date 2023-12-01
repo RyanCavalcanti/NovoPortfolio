@@ -11,9 +11,9 @@ const midias = [
 const SocialMedia = () => {
 
     return(
-        <ContainerMidia>
+        <ContainerMidia >
         {midias.map( (item) => (
-            <div key={item.id}>
+            <div key={item.id} id='contatos'>
             <a href={item.href} target='_blank'><img className={styles.icon} src={item.src} alt={item.alt} /></a>
         </div>
         ))}

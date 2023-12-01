@@ -11,6 +11,7 @@ import ContainerCard from './components/ContainerCard/ContainerCard';
 import Form from './components/Form/Form';
 import Footer from './components/Footer/Footer';
 import SocialMedia from './components/SocialMedia/SocialMedia';
+import Technologies from './components/Technologies/Technologies';
 
 function App() {
 
@@ -23,6 +24,8 @@ function App() {
     <AboutMe/> 
     <Title Titulo='Serviços' />
     <ServicesProvided />
+    <Title Titulo='Tecnologias' />
+    <Technologies />
     <Title Titulo='Projetos de Clientes' />
     <ProjectsClient />
     <Title Titulo='Desenvolva seu Website com quem entende' />
