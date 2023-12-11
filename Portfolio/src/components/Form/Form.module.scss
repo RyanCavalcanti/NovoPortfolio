@@ -1,0 +1,224 @@
+@import '../../styles/variables';
+@import '../../styles/breakpoints';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+        color: $black;
+        text-align: center;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: $bold;
+        line-height: normal;
+        margin: 30px 0 10px;
+
+        @media screen and (min-width: $smartphone) {
+            font-size: 34px;
+        }
+
+        @media screen and (min-width: $tablet) {
+            font-size: 38px;
+        }
+
+        @media screen and (min-width: $desktop_xsm) {
+            font-size: 42px;
+        }
+
+        @media screen and (min-width: $desktop_sm) {
+            font-size: 44px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            font-size: 48px;
+        }
+    }
+
+    .form {
+        text-align: center;
+        width: 340px;
+        height: 290px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.20);
+        box-shadow: 0px 0px 10px 0px $black;
+        backdrop-filter: blur(20px);
+
+        @media screen and (min-width: $smartphone) {
+            width: 400px;
+            height: 300px;
+        }
+
+        @media screen and (min-width: $tablet) {
+            width: 600px;
+            height: 400px;
+            padding: 50px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            width: 644px;
+            height: 480px;
+        }
+
+        .inputName {
+            width: 300px;
+            height: 27px;
+            flex-shrink: 0;
+            border-radius: 40px;
+            background: $light-grey;
+            border: 1px solid $black;
+            margin-top: 30px;
+            color: $black-text;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: $medium;
+            line-height: normal;
+            padding-left: 10px;
+
+            @media screen and (min-width: $smartphone) {
+                width: 350px;
+                height: 30px;
+                font-size: 16px;
+            }
+
+            @media screen and (min-width: $tablet) {
+                width: 470px;
+                height: 35px;
+            }
+
+            @media screen and (min-width: $desktop) {
+                width: 540px;
+                height: 52px;
+                font-size: 18px;
+            }
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .inputEmail {
+                width: 300px;
+                height: 27px;
+                flex-shrink: 0;
+                border-radius: 40px;
+                background: $light-grey;
+                border: 1px solid $black;
+                margin-top: 30px;
+                color: $black-text;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: $medium;
+                line-height: normal;
+                padding-left: 10px;
+
+                @media screen and (min-width: $smartphone) {
+                    width: 350px;
+                    height: 30px;
+                    font-size: 16px;
+                }
+
+                @media screen and (min-width: $tablet) {
+                    width: 470px;
+                    height: 35px;
+                }
+
+                @media screen and (min-width: $desktop) {
+                    width: 540px;
+                    height: 52px;
+                    font-size: 18px;
+                }
+            }
+
+            .inputNumber {
+                width: 300px;
+                height: 27px;
+                flex-shrink: 0;
+                border-radius: 40px;
+                background: $light-grey;
+                border: 1px solid $black;
+                margin-top: 30px;
+                color: $black-text;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: $medium;
+                line-height: normal;
+                padding-left: 10px;
+
+                @media screen and (min-width: $smartphone) {
+                    width: 350px;
+                    height: 30px;
+                    font-size: 16px;
+                }
+
+                @media screen and (min-width: $tablet) {
+                    width: 470px;
+                    height: 35px;
+                }
+
+                @media screen and (min-width: $desktop) {
+                    width: 540px;
+                    height: 52px;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .btn {
+            border-radius: 40px;
+            background: $black;
+            border: none;
+            color: $white;
+            margin-top: 30px;
+            padding: 6px 60px;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: $medium;
+            line-height: normal;
+
+            @media screen and (min-width: $smartphone) {
+                font-size: 16px;
+                padding: 6px 80px;
+            }
+
+            @media screen and (min-width: $tablet) {
+                font-size: 18px;
+                padding: 6px 100px;
+            }
+
+            @media screen and (min-width: $desktop_xsm) {
+                font-size: 20px;
+            }
+
+            @media screen and (min-width: $desktop_sm) {
+                font-size: 22px;
+            }
+
+            @media screen and (min-width: $desktop) {
+                font-size: 26px;
+            }
+
+        }
+
+        .politic {
+            color: $black;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: $medium;
+            line-height: normal;
+            margin: 6px 20px;
+
+            @media screen and (min-width: $tablet) {
+                margin: 16px 20px;
+                font-size: 14px;
+            }
+        }
+    }
+}

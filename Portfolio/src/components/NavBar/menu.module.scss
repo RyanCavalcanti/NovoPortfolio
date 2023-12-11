@@ -1,0 +1,112 @@
+@import '../../styles/variables';
+@import '../../styles/breakpoints';
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .name {
+        color: $black;
+        font-size: 14px;
+        font-weight: $bold;
+        cursor: pointer;
+        display: none;
+
+        @media screen and (min-width: $smartphone) {
+            font-size: 18px;
+        }
+
+        @media screen and (min-width: $tablet) {
+            display: block;
+            font-size: 18px;
+        }
+
+        @media screen and (min-width: $desktop_xsm) {
+            font-size: 22px;
+        }
+
+        @media screen and (min-width: $desktop) {
+            font-size: 26px;
+        }
+    }
+
+    .list__ul {
+        display: none;
+    }
+
+    .btns {
+        display: none;
+    }
+
+    @media screen and (min-width: $tablet) {
+        padding: 20px 10px;
+
+        .navbar {
+            display: none;
+        }
+
+        .itens {
+            display: flex;
+            gap: 1rem;
+
+            .list__ul {
+                display: flex;
+                gap: 1rem;
+
+                .item {
+                    color: $black;
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: $medium;
+                    text-decoration: none;
+
+                    :hover {
+                        color: $orange;
+                    }
+
+                    @media screen and (min-width: $desktop) {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+
+        .btns {
+            display: flex;
+            gap: 20px;
+
+            .btnCtt {
+                text-decoration: none;
+                background-color: $black;
+                color: $white;
+                font-size: 14px;
+                font-weight: $medium;
+                padding: 10px 16px;
+                border-radius: 40px;
+                border: none;
+                cursor: pointer;
+
+                @media screen and (min-width: $desktop) {
+                    font-size: 18px;
+                }
+            }
+
+            .btnLang {
+                text-decoration: none;
+                background-color: $light-grey;
+                color: $black;
+                font-size: 14px;
+                font-weight: $medium;
+                padding: 10px 16px;
+                border-radius: 40px;
+                border: none;
+                cursor: pointer;
+
+                @media screen and (min-width: $desktop) {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

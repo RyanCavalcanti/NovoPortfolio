@@ -1,0 +1,30 @@
+@import '../../styles/variables';
+@import '../../styles/breakpoints';
+
+.titulo {
+    color: $black;
+    font-size: 20px;
+    font-weight: $bold;
+    text-align: center;
+    margin: 30px 50px 10px;
+
+    @media screen and (min-width: $smartphone) {
+        font-size: 22px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        font-size: 28px;
+    }
+
+    @media screen and (min-width: $desktop_xsm) {
+        font-size: 34px;
+    }
+
+    @media screen and (min-width: $desktop_sm) {
+        font-size: 36px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 40px;
+    }
+}
