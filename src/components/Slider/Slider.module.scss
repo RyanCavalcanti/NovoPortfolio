@@ -1,9 +1,8 @@
-@import '/src/styles/variables';
-@import '/src/styles/breakpoints';
+@import '../../styles/variables';
+@import '../../styles/breakpoints';
 
 .container {
     text-align: center;
-
 
     .banner {
         width: 350px;
@@ -85,6 +84,5 @@
             }
         }
     }
-
 
 }

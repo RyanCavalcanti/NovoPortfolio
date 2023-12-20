@@ -19,9 +19,9 @@ const Slider = () => {
 
     const [indiceAtual, setIndiceAtual] = useState(0);
 
-    const handleSlideChange = (swiper: { realIndex: number }) => {
-        setIndiceAtual(swiper.realIndex);
-    };
+         const handleSlideChange = (swiper: { realIndex: number }) => {
+             setIndiceAtual(swiper.realIndex);
+         };
 
   return (
     <section className={styles.container}>
@@ -29,7 +29,9 @@ const Slider = () => {
         modules={[Autoplay]}
         slidesPerView={1}
         onSlideChange={handleSlideChange}
-        //autoplay={true}
+        loop={true}
+        speed={2000}
+        autoplay={true}
     >
         {imagens.map( (item) => (
             <SwiperSlide key={item.id} >

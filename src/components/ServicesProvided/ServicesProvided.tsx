@@ -43,7 +43,8 @@ const ServicesProvided = () => {
       case 2:
         return <PhotoComponent imageUrl="assets/BannerResults.png" imageAlt='Results Comunicação' />;
       case 3:
-        return <PhotoComponent imageUrl="assets/BannerAurora.jpg" imageAlt='Traje Aurora' />;
+        return <PhotoComponent imageUrl="assets/EmBreve.png" imageAlt='Em Breve' />;
+        // return <PhotoComponent imageUrl="assets/BannerAurora.jpg" imageAlt='Traje Aurora' />;
       default:
         return null;
     }

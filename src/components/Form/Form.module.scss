@@ -1,5 +1,5 @@
-@import '/src/styles/variables';
-@import '/src/styles/breakpoints';
+@import '../../styles/variables';
+@import '../../styles/breakpoints';
 
 .container {
     display: flex;
@@ -40,7 +40,7 @@
     .form {
         text-align: center;
         width: 340px;
-        height: 290px;
+        height: auto;
         flex-shrink: 0;
         border-radius: 20px;
         background: rgba(255, 255, 255, 0.20);
@@ -49,18 +49,15 @@
 
         @media screen and (min-width: $smartphone) {
             width: 400px;
-            height: 300px;
         }
 
         @media screen and (min-width: $tablet) {
             width: 600px;
-            height: 400px;
             padding: 50px;
         }
 
         @media screen and (min-width: $desktop) {
             width: 644px;
-            height: 480px;
         }
 
         .inputName {
@@ -182,6 +179,7 @@
             font-style: normal;
             font-weight: $medium;
             line-height: normal;
+            cursor: pointer;
 
             @media screen and (min-width: $smartphone) {
                 font-size: 16px;
@@ -205,6 +203,34 @@
                 font-size: 26px;
             }
 
+        }
+
+        .successMessage {
+            color: $green;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: $bold;
+            line-height: normal;
+            margin: 20px 20px;
+
+            @media screen and (min-width: $tablet) {
+                margin: 26px 20px;
+                font-size: 14px;
+            }
+        }
+
+        .errorMessage {
+            color: $red;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: $bold;
+            line-height: normal;
+            margin: 20px 20px;
+
+            @media screen and (min-width: $tablet) {
+                margin: 26px 20px;
+                font-size: 14px;
+            }
         }
 
         .politic {

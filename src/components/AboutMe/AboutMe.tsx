@@ -4,7 +4,7 @@ const AboutMe = () => {
   return (
     <section className={styles.secao} id='sobremim'>
       <div className={styles.organizacao}>
-        <img src='assets/Ryan.png' className={styles.imagem} alt="Ryan Cavalcanti" />
+          <img src='assets/Photo.png' className={styles.imagem} alt="Ryan Cavalcanti" />
         <div className={styles.textos}>
           <h1 className={styles.titulo}>Olá! Eu sou Ryan Cavalcanti!</h1>
           <p className={styles.texto}>

@@ -1,5 +1,5 @@
-@import '/src/styles/variables';
-@import '/src/styles/breakpoints';
+@import '../../styles/variables';
+@import '../../styles/breakpoints';
 
 .secao {
 
@@ -23,23 +23,20 @@
 
         .imagem {
             width: 150px;
-            height: 201px;
-            margin: 20px;
+            height: auto;
+            border-radius: 10px 10px 20px 20px;
 
             @media screen and (min-width: $tablet) {
                 width: 200px;
-                height: 251px;
             }
 
             @media screen and (min-width: $desktop_xsm) {
                 width: 250px;
-                height: 311px;
                 margin-right: 50px;
             }
 
             @media screen and (min-width: $desktop_sm) {
                 width: 280px;
-                height: 361px;
                 margin-right: 150px;
             }
         }
@@ -50,7 +47,7 @@
                 color: $black;
                 font-size: 16px;
                 font-weight: $bold;
-                text-align: left;
+                text-align: center;
                 margin: 10px;
 
                 @media screen and (min-width: $smartphone) {
@@ -59,6 +56,10 @@
 
                 @media screen and (min-width: $tablet) {
                     font-size: 26px;
+                }
+
+                @media screen and (min-width: $desktop_xsm) {
+                    text-align: left;
                 }
 
                 @media screen and (min-width: $desktop_sm) {
